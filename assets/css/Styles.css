@@ -1,0 +1,349 @@
+.cabeçalho {
+    align-items: center;
+    background:#f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem ;
+}
+
+@media screen and (min-width: 0) {
+    .cabeçalho {
+        justify-content: center;
+        padding: 0 1rem; 
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .cabeçalho {
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 0) {
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        display: block;
+    }
+}
+
+.menu__lista {
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__item:last-child .menu__link {
+    margin-right: 0;
+}
+
+.menu__link {
+    color: #808080;
+    margin-right: 1.25rem;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.menu__link.ativo {
+    color: #333333;
+    font-weight: bold;
+}
+
+.menu__link:hover {
+    text-decoration: underline;
+}
+
+/* fim do menu */
+/* inicio da section banner */
+
+.banner {
+    position: relative;     
+}
+
+.banner__imagem {
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__imagem {
+        height: calc(100vh - 52px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner__imagem {
+        height: calc(100vh - 82px);
+    }
+}
+
+.banner__titulo {
+    font-family: Pacifico, cursive;
+    color: #fdfdfd;
+    position: absolute;
+    left: 50%;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+@media screen and (min-width: 0) {
+    .banner__titulo {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner__titulo {
+        font-size: 5.0625rem;
+    }
+}
+/* fim da section banner */
+/* inicio da section sobre */
+
+.Sobre {
+    text-align: center;
+}
+
+@media screen and (min-width: 0) {
+    .sobre {
+        padding: 2.5rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .sobre {
+        padding: 2.5rem;
+    }
+}
+
+.Sobre__titulo {
+    color: #8d0606;
+    font-family: Pacifico, cursive;
+}
+
+@media screen and (min-width: 0) {
+    .Sobre__titulo {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Sobre__titulo {
+        font-size: 3.1875rem;
+    }
+}
+
+.Sobre__descrição {
+    color: #595959;
+    font-weight: 100;
+}
+
+@media screen and (min-width: 0) {
+    .Sobre__descrição {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .Sobre__descrição {
+        font-size: 1.75rem;
+    }
+}
+
+/* fim da section sobre */
+/* inicio section receitas */
+
+.receitas {
+    background: #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 0) {
+    .receitas {
+        padding: 5rem 0 0 1rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .receitas {
+        padding: 5rem 0 0 2.5rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .receitas {
+        padding: 5rem 0 0 5rem;
+    }
+}
+
+.receita {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    
+}
+
+@media screen and (min-width: 0) {
+    .receita {
+        margin-right: 1rem;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .receita {
+        margin-right: 2.5rem;
+        width: calc(33.33% - 2.5rem);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .receita {
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
+}
+
+.receita__imagem {
+    height: 200px;
+}
+
+.receita__titulo {
+    font-size: 1.4375rem;
+}
+
+.receita__descricao {
+  font-size: 1.1875rem;
+  line-height: 1.5;
+  text-align: justify;  
+}
+
+.receita__conteudo {
+    padding: 1rem;
+}
+
+.receita__botao {
+    background: #8d0606;
+    border: none;
+    border-radius: 5px;
+    color: #fdfdfd;
+    padding: 1rem;
+    transition: all 1.1s ease-in-out;
+}
+
+.receita__botao:hover {
+    cursor: pointer;
+    background: #620404;
+}
+/* fim da section receitas */
+/* inicio section quem somos */
+
+.quem-somos {
+    text-align: center;
+    padding: 5rem;
+}
+
+.quem-somos__titulo {
+    margin-bottom: 1rem;
+    color: #8d0606;
+    font-size: 3.1875rem;
+    font-family: Pacifico, cursive;
+}
+
+.quem-somos__descricao {
+    font-weight: 100;
+    font-size: 1.75rem;
+    color: #595959;
+}
+
+.pessoas{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+@media screen and (min-width: 0) {
+    .pessoas {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pessoas {
+        flex-direction: row;
+    }
+}
+
+
+.pessoa {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 0) {
+    .pessoa { ;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pessoa {
+        margin-bottom: 0;
+    }
+}
+
+.pessoa__nome {
+    margin: 1rem 0;
+    font-family: Pacifico, cursive;
+    color: #8d0606;
+    font-size: 2rem;
+}
+
+.pessoa__funcao {
+    text-transform: lowercase;
+    color: #595959;
+    font-size: 1.25rem;
+}
+
+.pessoa__imagem {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+
+.pessoa__imagem--roberta {
+    background-image: url('../img/pessoas/roberta.jpg');
+}
+
+.pessoa__imagem--marcela {
+    background-image: url('../img/pessoas/marcela.jpg');
+}
+
+.pessoa__imagem--andreia { 
+    background-image: url('../img/pessoas/andreia.jpg');
+}
+/* fim da section quem somos */
+/* inicio do footer */
+.rodape {
+    background: #bfbfbf;
+    color: #fdfdfd;
+    text-align: right;
+    padding: 1.5625rem 5rem;
+    text-transform: lowercase;
+}
+/* fim do footer */
